@@ -1,9 +1,111 @@
+
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VCAM</string>
-    <string name="description">請前往線上倉庫來查看使用方法，應用更新和迴響缺陷</string>
-    <string name="Warning">請勿用於非法用途，所有後果自負！</string>
-    <string name="permission_lack_warn">無許可權</string>
-    <string name="permission_description">訪問本地目錄的許可權用於設定設定檔，如果拒絕，您需要手動設定設定檔。</string>
-    <string name="positive">確定</string>
-    <string name="negative">拒絕</string>
+    <string name="module_description">Android Virtual Camera</string>
+    <string name="description">Visit the online repository for the latest updates</string>
+    <string name="Warning">Strictly prohibited for any illegal use!</string>
+
+    <!-- Permission -->
+    <string name="permission_switch_text">Grant Storage Permission</string>
+    <string name="permission_lack_warn">Required permissions are missing</string>
+    <string name="permission_description">Storage permission is required to configure settings files.</string>
+    <string name="positive">OK</string>
+    <string name="negative">Deny</string>
+
+    <!-- Home Screen Status -->
+    <string name="status_no_permission">No Permission</string>
+    <string name="status_working">Working</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_module_inactive">Module Inactive</string>
+    <string name="status_activate_hint">Activate the module in the Xposed Manager and restart.</string>
+    <string name="status_grant_permission">Grant Permission</string>
+    <string name="status_label_play_mode">Playback Mode</string>
+    <string name="status_label_mic">Microphone</string>
+    <string name="status_label_video_sound">Original Video Audio</string>
+    <string name="status_label_notification">Notification Control</string>
+    <string name="status_value_on">On</string>
+    <string name="status_value_off">Off</string>
+    <string name="status_value_random_play">Random Playback</string>
+    <string name="status_value_sequential_play">Sequential Playback</string>
+    <string name="status_value_mic_mute">Muted</string>
+    <string name="status_value_mic_replace">Audio Replacement</string>
+    <string name="status_value_mic_sync">Video Sync</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_category_general">General Settings</string>
+    <string name="settings_notification_control">Enable Notification Controls</string>
+    <string name="settings_notification_control_desc">Switch videos quickly from the notification panel</string>
+    <string name="settings_play_sound">Play Sound</string>
+    <string name="settings_play_sound_desc">Play the original audio when replacing a video</string>
+    <string name="settings_mic_hook">Microphone Hook</string>
+    <string name="settings_mic_hook_desc">Hook microphone input</string>
+    <string name="mic_mode_mute">Mute Mode</string>
+    <string name="mic_mode_mute_desc">Output silent audio data</string>
+    <string name="mic_mode_replace">Audio Replacement</string>
+    <string name="mic_mode_replace_desc">Inject a custom audio file</string>
+    <string name="mic_mode_video_sync">Video Sync</string>
+    <string name="mic_mode_video_sync_desc">Play the original video audio track</string>
+    <string name="settings_random_play">Random Playback</string>
+    <string name="settings_random_play_desc">Select a video randomly from the list</string>
+    <string name="settings_category_advanced">Advanced Settings</string>
+    <string name="settings_force_private_dir">Force Private Directory</string>
+    <string name="settings_force_private_dir_desc">Fix file access issues in some apps</string>
+    <string name="settings_disable_toast">Disable Toast Messages</string>
+    <string name="settings_disable_toast_desc">Hide all operation messages</string>
+    <string name="settings_enable_photo_fake">Enable Photo Replacement</string>
+    <string name="settings_enable_photo_fake_desc">Intercept camera requests and inject video frames</string>
+    <string name="settings_disable_module">Disable Module</string>
+    <string name="settings_disable_module_desc">Temporarily disable all hook features</string>
+    <string name="settings_system_permission">System Permission Settings</string>
+    <string name="settings_system_permission_desc">Manage storage and notification permissions</string>
+
+    <!-- Stream Settings -->
+    <string name="settings_category_stream">Network Stream Settings</string>
+    <string name="settings_media_source_type">Media Source Type</string>
+    <string name="settings_media_source_local">Local Files</string>
+    <string name="settings_media_source_stream">Network Stream</string>
+    <string name="settings_stream_url">Stream URL</string>
+    <string name="settings_stream_url_hint">Enter an address such as rtsp:// or rtmp://</string>
+    <string name="settings_stream_auto_reconnect">Auto Reconnect</string>
+    <string name="settings_stream_auto_reconnect_desc">Reconnect automatically when the stream disconnects</string>
+    <string name="settings_stream_local_fallback">Local Fallback</string>
+    <string name="settings_stream_local_fallback_desc">Fall back to a local video when the stream is unavailable</string>
+    <string name="settings_stream_transport_hint">RTSP Transport Protocol</string>
+    <string name="settings_stream_transport_auto">Automatic</string>
+    <string name="settings_stream_transport_tcp">TCP</string>
+    <string name="settings_stream_transport_udp">UDP</string>
+    <string name="settings_stream_timeout">Connection Timeout</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_manage">Manage</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Manage Screen -->
+    <string name="tab_video_manage">Video</string>
+    <string name="tab_audio_manage">Audio</string>
+    <string name="desc_add_media">Add Media</string>
+    <string name="status_no_video">No video files</string>
+    <string name="status_no_audio">No audio files</string>
+    <string name="import_to_camera_dir">Import to Camera1 Directory (Copy)</string>
+    <string name="select_from_storage">Select from Storage (Use Original File)</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_app_name">VCAM</string>
+    <string name="about_desc">Virtual camera module based on the Xposed framework</string>
+    <string name="support_title">Support</string>
+    <string name="support_github">View and provide feedback on GitHub</string>
+
+    <!-- Misc -->
+    <string name="config_migrated">Configuration migrated automatically</string>
+
+    <!-- Notification -->
+    <string name="notif_content">VCAM Notification Controls</string>
+    <string name="notif_action_prev">Previous</string>
+    <string name="notif_action_next">Next</string>
+    <string name="notif_action_exit">Exit</string>
+    <string name="notif_channel_name">VCAM Control Service</string>
+    <string name="notif_channel_desc">Show VCAM video switching controls</string>
 </resources>
